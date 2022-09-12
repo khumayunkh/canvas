@@ -1,14 +1,32 @@
 var canvas = document.getElementById('canvas') 
 var ctx = canvas.getContext('2d');
+let myColor = 'red'
 
-ctx.fillStyle = 'red'
-ctx.fillRect(5,5,50,50)
-ctx.clearRect(0,0,400,200)
+document.querySelector('.color').oninput = function(){
+    myColor = this.value
+}
 
-ctx.strokeStyle = 'green';
-ctx.lineWidth = '1'
-ctx.rect(5,5,50,50)
-ctx.stroke()
+canvas.onmousedown = function(event){
+    canvas.onmousemove = function(event){
+        let x  = event.offsetX
+        let y = event.offsetY
+        ctx.fillRect(x-10,y-10,10,10)
+        ctx.fillStyle = myColor
+        ctx.fill()
+    }
+    canvas.onmouseup = function(){
+        canvas.onmousemove = null
+    }
+}
+
+// ctx.fillStyle = 'red'
+// ctx.fillRect(5,5,50,50)
+// ctx.clearRect(0,0,400,200)
+
+// ctx.strokeStyle = 'green';
+// ctx.lineWidth = '1'
+// ctx.rect(5,5,50,50)
+// ctx.stroke()
 
 
 // let canvas2 = document.querySelector('#canvas_2')
@@ -34,7 +52,7 @@ let ctx_2 = canvas2.getContext('2d')
 // ctx_2.lineWidth = '1'
 // ctx_2.fill()
 // ctx_2.stroke()
-
+ 
 ctx_2.beginPath()
 ctx_2.fillStyle = 'red';
 ctx_2.strokeStyle = 'blue'
