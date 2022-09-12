@@ -41,7 +41,20 @@ ctx_2.strokeStyle = 'blue'
 ctx_2.moveTo(10,10)
 ctx_2.lineTo(150,150)
 ctx_2.lineTo(150,10)
-ctx_2.lineWidth = '5'
-ctx_2.fill()
+ctx_2.lineWidth = '2'
 ctx_2.closePath()
 ctx_2.stroke()
+ctx_2.fill()
+
+let ctx_3 = canvas2.getContext('2d')
+
+ctx_3.beginPath()
+ctx_3.strokeStyle = 'blue'
+ctx_3.moveTo(155,10)
+ctx_3.lineTo(155,150)
+ctx_3.lineTo(295,10)
+ctx_3.lineWidth = '2'
+ctx_3.closePath()
+ctx_3.stroke()
+ctx_3.fill()
+
