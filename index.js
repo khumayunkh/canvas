@@ -76,19 +76,20 @@ ctx_3.closePath()
 ctx_3.stroke()
 ctx_3.fill()
 
-
 var canvas3 = document.querySelector('#canvas_3')
 var ctx3 = canvas3.getContext('2d')
 
 var pi = Math.PI
 ctx3.beginPath()
+
 // ctx3.fillStyle = 'red'
-// // ctx3.fillRect(10,10, 100, 100)
+// ctx3.fillRect(10,10, 100, 100)
 // ctx3.strokeStyle = 'red'
 // ctx3.rect(10,10,100,100)
 // ctx3.lineWidth = 2
 // ctx3.stroke()
 // ctx3.fill()
+
 // ctx3.strokeStyle = 'red'
 // ctx3.moveTo(10,10)
 // ctx3.lineTo(50,50)
@@ -97,9 +98,24 @@ ctx3.beginPath()
 // ctx3.fill()
 // ctx3.closePath()
 // ctx3.stroke()
+
 ctx3.fillStyle = 'red'
 ctx3.lineWidth = 2
-ctx.fillStyle = 'red'
+ctx3.strokeStyle = 'blue'
+ctx.fillStyle = 'red'/
 ctx3.arc(100,90,50,0,2*pi,false)
 ctx3.fill()
 ctx3.stroke()
+
+// canvas3.onmousedown = function(event){
+//     canvas3.onmousemove = function (event){
+//         let x = event.offsetX
+//         let y = event.offsetY
+//         ctx3.fillRect(x-5,y-5,8,8)
+//         ctx3.fillStyle = myColor
+//         ctx3.fill()
+//     }
+//     canvas3.onmouseup = function(){
+//         canvas3.onmousemove = null
+//     }
+// }
