@@ -56,16 +56,23 @@ let ctx_2 = canvas2.getContext('2d')
 // ctx_2.fill()
 // ctx_2.stroke()
 
+// ctx_2.beginPath()
+// ctx_2.fillStyle = 'red';
+// ctx_2.strokeStyle = 'blue'
+// ctx_2.moveTo(10,10)
+// ctx_2.lineTo(150,150)
+// ctx_2.lineTo(150,10)
+// ctx_2.lineWidth = '2'
+// ctx_2.closePath()
+// ctx_2.stroke()
+// ctx_2.fill()
 ctx_2.beginPath()
-ctx_2.fillStyle = 'red';
-ctx_2.strokeStyle = 'blue'
-ctx_2.moveTo(10,10)
-ctx_2.lineTo(150,150)
-ctx_2.lineTo(150,10)
-ctx_2.lineWidth = '2'
+ctx_2.fillStyle = 'red'
+ctx_2.moveTo(20,20)
+ctx_2.lineTo(60,100)
+ctx_2.lineTo(60,20)
 ctx_2.closePath()
-ctx_2.stroke()
-ctx_2.fill()
+
 
 let ctx_3 = canvas2.getContext('2d')
 
