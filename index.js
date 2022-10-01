@@ -2,22 +2,25 @@ var canvas = document.getElementById('canvas')
 var ctx = canvas.getContext('2d');
 let myColor = 'red'
 
-document.querySelector('.color').oninput = function(){
-    myColor = this.value
-}
+// document.querySelector('.color').oninput = function(){
+//     myColor = this.value
+// }
 
-canvas.onmousedown = function(event){
-    canvas.onmousemove = function(event){
-        let x  = event.offsetX
-        let y = event.offsetY
-        ctx.fillRect(x-5,y-5,8,8)
-        ctx.fillStyle = myColor
-        ctx.fill()
-    }
-    canvas.onmouseup = function(){
-        canvas.onmousemove = null
-    }
-}
+// canvas.onmousedown = function(event){
+//     canvas.onmousemove = function(event){
+//         let x  = event.offsetX
+//         let y = event.offsetY
+//         ctx.fillRect(x-5,y-5,8,8)
+//         ctx.fillStyle = myColor
+//         ctx.fill()
+//     }
+//     canvas.onmouseup = function(){
+//         canvas.onmousemove = null
+//     }
+// }
+
+ctx.fillStyle = 'red'
+ctx.fillRect(5,5,50,50)
 
 // ctx.fillStyle = 'red'
 // ctx.fillRect(5,5,50,50)
