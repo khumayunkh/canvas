@@ -117,15 +117,15 @@ ctx3.arc(100,90,50,0,2*pi,false)
 ctx3.fill()
 ctx3.stroke()
 
-// canvas3.onmousedown = function(event){
-//     canvas3.onmousemove = function (event){
-//         let x = event.offsetX
-//         let y = event.offsetY
-//         ctx3.fillRect(x-5,y-5,8,8)
-//         ctx3.fillStyle = myColor
-//         ctx3.fill()
-//     }
-//     canvas3.onmouseup = function(){
-//         canvas3.onmousemove = null
-//     }
-// }
+canvas3.onmousedown = function(event){
+    canvas3.onmousemove = function (event){
+        let x = event.offsetX
+        let y = event.offsetY
+        ctx3.fillRect(x-5,y-5,8,8)
+        ctx3.fillStyle = myColor
+        ctx3.fill()
+    }
+    canvas3.onmouseup = function(){
+        canvas3.onmousemove = null
+    }
+}
